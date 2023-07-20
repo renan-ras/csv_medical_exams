@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    command: bash -c "ruby server.rb"
+    volumes:
+      - .:/app
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    networks:
+      - medical-center
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: my_user
+      POSTGRES_PASSWORD: my_password
+      POSTGRES_DB: my_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - medical-center
+
+networks:
+  medical-center:
+
+volumes:
+  postgres_data:
