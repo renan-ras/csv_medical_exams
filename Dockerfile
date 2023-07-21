@@ -3,4 +3,4 @@ WORKDIR /app
 COPY Gemfile* ./
 RUN bundle install
 COPY . .
-CMD ["ruby", "server.rb"]
+CMD [ "ruby", "server.rb" ]
