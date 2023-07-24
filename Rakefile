@@ -1,21 +1,10 @@
-# Rakefile
-# require 'sinatra'
-# require 'rake'
-# require 'rake/testtask'
-# require 'active_record'
 require 'sinatra/activerecord/rake'
-# require './lib/csv_importer'
-require './server'
+require './lib/csv_importer'
+require './config/database'
 
-# namespace :db do
-#   task :load_config do
-#     require_relative './config/database'
-#   end
-
-#   desc 'Import CSV data'
-#   task import_csv: :load_config do
-#     CSVImporter.import('./data.csv')
-#   end
-
-#   task migrate: :load_config
-# end
+namespace :db do
+  desc 'Import CSV data'
+  task :import_csv do
+    CSVImporter.import('./data.csv')
+  end
+end

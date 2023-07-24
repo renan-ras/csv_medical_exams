@@ -1,9 +1,10 @@
-require 'active_record'
+require 'sinatra'
+require 'sinatra/activerecord'
 
-ActiveRecord::Base.establish_connection(
+set :database, {
   adapter: 'postgresql',
   database: 'my_db',
   username: 'my_user',
   password: 'my_password',
   host: 'db'
-)
+}
