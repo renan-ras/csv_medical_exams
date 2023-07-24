@@ -10,6 +10,10 @@ unless defined?(Rake)
     Exam.all.to_json
   end
 
+  get '/' do
+    File.read('index.html')
+  end
+
   Rack::Handler::Puma.run(
     Sinatra::Application,
     Port: 3000,
