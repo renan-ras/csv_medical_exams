@@ -1,14 +1,6 @@
 require 'csv'
 require './models/exam'
 
-# class CSVImporter
-#   def self.import(path)
-#     CSV.foreach(path, headers: true, col_sep: ';') do |row|
-#       Exam.create(row.to_hash)
-#     end
-#   end
-# end
-
 class CSVImporter
   CSV_TO_MODEL_MAP = {
     'cpf' => 'cpf',

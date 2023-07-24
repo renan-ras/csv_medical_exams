@@ -10,6 +10,11 @@ unless defined?(Rake)
     Exam.all.to_json
   end
 
+  get '/tests/:token' do
+    content_type :json
+    Exam.where(exam_token: params[:token]).to_json
+  end
+
   get '/' do
     File.read('index.html')
   end
