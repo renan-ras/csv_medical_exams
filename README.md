@@ -23,11 +23,9 @@ Disponibilização de endpoints em JSON.
 * :heavy_check_mark: JavaScript consumindo endpoints;
 * :heavy_check_mark: HTML exibindo todos os exames
 * :heavy_check_mark: HTML pesquisando exames por token;
-<details>
-  <summary>Ver imagem</summary>
 
-  ![image](https://github.com/renan-ras/csv_medical_exams/assets/126360032/404fe34b-6f04-4fa9-aed5-f9a65dd58f6f)
-</details>
+![HTML pesquisando exames por token](https://github.com/renan-ras/csv_medical_exams/assets/126360032/404fe34b-6f04-4fa9-aed5-f9a65dd58f6f)
+
 
 ### Pendente
 * :x: Importar resultados de exames em formato CSV de forma assíncrona;
@@ -62,7 +60,7 @@ docker exec -it csv_medical_exams-web-1 bash -c "rake db:import_csv"
 Acesse a aplicação em seu navegador através do endereço: http://localhost:3000
 
 
-Para encerrar a aplicação, aperte CTRL + C no terminal que roda o docker, ou:
+Para encerrar a aplicação, aperte `CTRL + C` no terminal que roda o docker, ou execute:
 ```sh
 docker compose up down
 ```
