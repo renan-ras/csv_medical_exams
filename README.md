@@ -62,11 +62,11 @@ Acesse a aplicação em seu navegador através do endereço: http://localhost:30
 
 Para encerrar a aplicação, aperte `CTRL + C` no terminal que roda o docker, ou execute:
 ```sh
-docker compose up down
+docker compose down
 ```
 
 Para limpar os dados gravados em volumes, execute:
 ```sh
-docker compose up down -v
+docker compose down -v
 ```
 
