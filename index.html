@@ -4,22 +4,30 @@
 <body>
   <div class="container">
     <h1>Lista de exames</h1>
-    
+
     <form id="search-form">
       <input type="text" id="search-token" placeholder="Digite o token do exame">
       <button type="submit">Pesquisar</button>
       <button type="button" id="show-all">Mostrar todos</button>
     </form>
-    
+
+    <div id="summary-card" class="card my-4" style="display: none;">
+      <h5 class="card-header" id="summary-token">Exame token: </h5>
+      <div class="card-body">
+        <h5 class="card-title" id="summary-patient-name"></h5>
+        <p class="card-text" id="summary-info"></p>
+      </div>
+    </div>    
+
     <table class="table table-hover table-striped table-dark" id="exam-table">
       <thead>
         <tr>
           <th>ID</th>
-          <th>CPF</th>
+          <th id="cpf-header">CPF</th>
           <th>Tipo de Exame</th>
           <th>Limites</th>
           <th>Resultado</th>
-          <th>Token</th>
+          <th id="token-header">Token</th>
         </tr>
       </thead>
       <tbody>
