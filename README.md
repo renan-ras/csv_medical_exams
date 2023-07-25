@@ -59,13 +59,21 @@ docker exec -it csv_medical_exams-web-1 bash -c "rake db:import_csv"
 
 Acesse a aplicação em seu navegador através do endereço: http://localhost:3000
 
+---
 
-Para encerrar a aplicação, aperte `CTRL + C` no terminal que roda o docker, ou execute:
+Para parar a aplicação, aperte `CTRL + C` no terminal que roda o docker;
+
+Para iniciá-la novamente, execute:
+```sh
+docker compose up
+```
+
+Para remover a rede e os containers criados, execute:
 ```sh
 docker compose down
 ```
 
-Para limpar os dados gravados em volumes, execute:
+Para remover os volumes criados, execute:
 ```sh
 docker compose down -v
 ```
