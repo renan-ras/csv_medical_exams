@@ -3,6 +3,7 @@ require 'sinatra/activerecord'
 require 'rack/handler/puma'
 require './config/database'
 require './models/exam'
+require './lib/csv_importer'
 
 unless defined?(Rake)
   get '/tests' do
@@ -17,6 +18,11 @@ unless defined?(Rake)
 
   get '/' do
     File.read('index.html')
+  end
+
+  post '/import' do
+    CSVImporter.import(params['file']['tempfile'])
+    redirect '/'
   end
 
   Rack::Handler::Puma.run(

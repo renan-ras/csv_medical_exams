@@ -5,6 +5,11 @@
   <div class="container">
     <h1>Lista de exames</h1>
 
+    <form action="/import" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload CSV">
+    </form>    
+
     <form id="search-form">
       <input type="text" id="search-token" placeholder="Digite o token do exame">
       <button type="submit">Pesquisar</button>
