@@ -2,6 +2,11 @@ const searchForm = document.getElementById('search-form');
 const searchTokenInput = document.getElementById('search-token');
 const showAllButton = document.getElementById('show-all');
 
+function formatDate(dateString) {
+  const [year, month, day] = dateString.split('-');
+  return `${day}/${month}/${year}`;
+}
+
 function fetchExams(url, tokenView) {
   document.getElementById('summary-card').style.display = 'none';
 
@@ -22,12 +27,13 @@ function fetchExams(url, tokenView) {
         document.getElementById('summary-token').textContent = `Exame token: ${data[0].exam_token}`;
         document.getElementById('summary-patient-name').textContent = data[0].patient_name;
         document.getElementById('summary-info').innerHTML = `
-          <strong>Data de nascimento:</strong> ${new Date(data[0].patient_birthdate).toLocaleDateString('pt-BR')}<br>
+          <strong>E-mail:</strong> ${data[0].patient_email}<br>
+          <strong>Data de nascimento:</strong> ${formatDate(data[0].patient_birthdate)}&nbsp;&nbsp;&nbsp;
           <strong>CPF:</strong> ${data[0].cpf}<br>
-          <strong>Endereço:</strong> ${data[0].patient_address}, ${data[0].patient_city}/${data[0].patient_state}<br>
+          <strong>Endereço:</strong> ${data[0].patient_address} - ${data[0].patient_city}, ${data[0].patient_state}<br>
           <strong>Médico(a) responsável:</strong> ${data[0].doctor_name} - ${data[0].doctor_email}<br>
-          <strong>CRM:</strong> ${data[0].doctor_crm} / ${data[0].doctor_crm_state}<br>
-          <strong>Data do exame:</strong> ${new Date(data[0].exam_date).toLocaleDateString('pt-BR')}<br>
+          <strong>CRM:</strong> ${data[0].doctor_crm}/${data[0].doctor_crm_state}&nbsp;&nbsp;&nbsp;
+          <strong>Data do exame:</strong> ${formatDate(data[0].exam_date)}<br>
         `;
         summaryCard.style.display = '';
 
