@@ -22,7 +22,8 @@ unless defined?(Rake)
 
   post '/import' do
     CSVImporter.import(params['file']['tempfile'])
-    redirect '/'
+    content_type :json
+    { status: 'success' }.to_json
   end
 
   Rack::Handler::Puma.run(

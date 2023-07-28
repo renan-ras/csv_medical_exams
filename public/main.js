@@ -93,3 +93,25 @@ showAllButton.addEventListener('click', function() {
 
   fetchExams(url, false);
 });
+
+const uploadForm = document.getElementById('upload-form');
+
+uploadForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(uploadForm);
+
+  fetch('/import', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    // handle response
+    if (response.ok) {
+      console.log('Upload successful');
+    } else {
+      console.log('Upload failed');
+    }
+  })
+  .catch(error => console.error('Error:', error));
+});

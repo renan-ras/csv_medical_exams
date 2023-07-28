@@ -1,6 +1,7 @@
 require 'csv'
 require './models/exam'
 
+# Classe responsável por importar resultados de exames a partir de um arquivo CSV
 class CSVImporter
   CSV_TO_MODEL_MAP = {
     'cpf' => 'cpf',
@@ -18,7 +19,7 @@ class CSVImporter
     'data exame' => 'exam_date',
     'tipo exame' => 'exam_type',
     'limites tipo exame' => 'exam_limits',
-    'resultado tipo exame' => 'exam_result',
+    'resultado tipo exame' => 'exam_result'
   }.freeze
 
   def self.import(path)
