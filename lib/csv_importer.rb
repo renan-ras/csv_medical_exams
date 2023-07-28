@@ -22,10 +22,10 @@ class CSVImporter
     'resultado tipo exame' => 'exam_result'
   }.freeze
 
-  def self.import(path)
-    CSV.foreach(path, headers: true, col_sep: ';') do |row|
-      exam_attributes = row.to_hash.transform_keys { |key| CSV_TO_MODEL_MAP[key] }
-      Exam.create(exam_attributes)
+  def self.import(csv_content)
+    CSV.parse(csv_content, headers: true, col_sep: ';') do |row|
+      exam_attributes = row.to_h.transform_keys { |key| CSV_TO_MODEL_MAP[key] }
+      Exam.create!(exam_attributes)
     end
   end
 end

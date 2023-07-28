@@ -3,12 +3,17 @@ services:
   web:
     build: .
     command: bash -c "rake db:migrate && ruby server.rb"
+    environment:
+      REDIS_URL: redis://redis:6379/0
     volumes:
       - .:/app
+      - gems-labs:/usr/local/bundle
     ports:
       - '3000:3000'
     depends_on:
       db:
+        condition: service_healthy
+      redis:
         condition: service_healthy
     networks:
       - medical-center
@@ -28,9 +33,33 @@ services:
       interval: 1s
       timeout: 10s
       retries: 3
+  
+  redis:
+    image: redis:7.2-rc3
+    networks:
+      - medical-center
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 1s
+      timeout: 3s
+      retries: 5
+
+  sidekiq:
+    build: .
+    command: bash -c "bundle install && bundle exec sidekiq -r ./lib/csv_importer_worker.rb"
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - .:/app
+      - gems-labs:/usr/local/bundle
+    depends_on:
+      - web
+    networks:
+      - medical-center
 
 networks:
   medical-center:
 
 volumes:
   postgres_data:
+  gems-labs:
