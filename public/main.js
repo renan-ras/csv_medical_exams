@@ -1,10 +1,127 @@
 const searchForm = document.getElementById('search-form');
 const searchTokenInput = document.getElementById('search-token');
 const showAllButton = document.getElementById('show-all');
+const itemsPerPage = 3*13; // Paginação
+let examsData = [];
+let currentPage = 1;
 
 function formatDate(dateString) {
   const [year, month, day] = dateString.split('-');
   return `${day}/${month}/${year}`;
+}
+
+function updatePagination() {
+  const paginationDiv = document.getElementById('pagination');
+  paginationDiv.innerHTML = '';
+
+  const totalPages = Math.ceil(examsData.length / itemsPerPage);
+  
+  let button = document.createElement('button');
+  button.textContent = 'Anterior';
+  button.onclick = previousPage;
+  button.disabled = currentPage === 1;
+  paginationDiv.appendChild(button);
+
+  for (let i = 1; i <= totalPages; i++) {
+    let button = document.createElement('button');
+    button.textContent = i;
+    button.onclick = () => goToPage(i);
+    if (i === currentPage) button.disabled = true;
+    paginationDiv.appendChild(button);
+  }
+
+  button = document.createElement('button');
+  button.textContent = 'Próximo';
+  button.onclick = nextPage;
+  button.disabled = currentPage === totalPages;
+  paginationDiv.appendChild(button);
+}
+
+function nextPage() {
+  if (currentPage * itemsPerPage < examsData.length) goToPage(currentPage + 1);
+}
+
+function previousPage() {
+  if (currentPage > 1) goToPage(currentPage - 1);
+}
+
+function goToPage(pageNumber) {
+  currentPage = pageNumber;
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  renderTable(examsData.slice(startIndex, endIndex), false);
+  updatePagination();
+}
+
+function renderTable(data, tokenView) {
+  const tableBody = document.querySelector('#exam-table tbody');
+  tableBody.innerHTML = '';
+  const cpfHeader = document.getElementById('cpf-header');
+  const tokenHeader = document.getElementById('token-header');
+
+  if (tokenView) {
+    cpfHeader.style.display = 'none';
+    tokenHeader.style.display = 'none';
+  } else {
+    cpfHeader.style.display = '';
+    tokenHeader.style.display = '';
+  }
+
+  if (tokenView) {
+    cpfHeader.style.display = 'none';
+    tokenHeader.style.display = 'none';
+
+    const summaryCard = document.getElementById('summary-card');
+    document.getElementById('summary-token').textContent = `Exame token: ${data[0].exam_token}`;
+    document.getElementById('summary-patient-name').textContent = data[0].patient_name;
+    document.getElementById('summary-info').innerHTML = `
+      <strong>Data de nascimento:</strong> ${new Date(data[0].patient_birthdate).toLocaleDateString('pt-BR')}<br>
+      <strong>CPF:</strong> ${data[0].cpf}<br>
+      <strong>Endereço:</strong> ${data[0].patient_address}, ${data[0].patient_city}/${data[0].patient_state}<br>
+      <strong>Médico(a) responsável:</strong> ${data[0].doctor_name} - ${data[0].doctor_email}<br>
+      <strong>CRM:</strong> ${data[0].doctor_crm} / ${data[0].doctor_crm_state}<br>
+      <strong>Data do exame:</strong> ${new Date(data[0].exam_date).toLocaleDateString('pt-BR')}<br>
+    `;
+    summaryCard.style.display = '';
+
+  } else {
+    cpfHeader.style.display = '';
+    tokenHeader.style.display = '';
+  }
+
+  data.forEach((exam) => {
+    const row = document.createElement('tr');
+
+    const idCell = document.createElement('td');
+    idCell.textContent = exam.id;
+    row.appendChild(idCell);
+
+    if (!tokenView) {
+      const cpfCell = document.createElement('td');
+      cpfCell.textContent = exam.cpf;
+      row.appendChild(cpfCell);
+    }
+
+    const typeCell = document.createElement('td');
+    typeCell.textContent = exam.exam_type;
+    row.appendChild(typeCell);
+
+    const limitsCell = document.createElement('td');
+    limitsCell.textContent = exam.exam_limits;
+    row.appendChild(limitsCell);
+
+    const resultCell = document.createElement('td');
+    resultCell.textContent = exam.exam_result;
+    row.appendChild(resultCell);
+
+    if (!tokenView) {
+      const tokenCell = document.createElement('td');
+      tokenCell.textContent = exam.exam_token;
+      row.appendChild(tokenCell);
+    }
+
+    tableBody.appendChild(row);
+  });
 }
 
 function fetchExams(url, tokenView) {
@@ -13,68 +130,15 @@ function fetchExams(url, tokenView) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const tableBody = document.querySelector('#exam-table tbody');
-      tableBody.innerHTML = '';
-
-      const cpfHeader = document.getElementById('cpf-header');
-      const tokenHeader = document.getElementById('token-header');
-
-      if (tokenView) {
-        cpfHeader.style.display = 'none';
-        tokenHeader.style.display = 'none';
-
-        const summaryCard = document.getElementById('summary-card');
-        document.getElementById('summary-token').textContent = `Exame token: ${data[0].exam_token}`;
-        document.getElementById('summary-patient-name').textContent = data[0].patient_name;
-        document.getElementById('summary-info').innerHTML = `
-          <strong>E-mail:</strong> ${data[0].patient_email}<br>
-          <strong>Data de nascimento:</strong> ${formatDate(data[0].patient_birthdate)}&nbsp;&nbsp;&nbsp;
-          <strong>CPF:</strong> ${data[0].cpf}<br>
-          <strong>Endereço:</strong> ${data[0].patient_address} - ${data[0].patient_city}, ${data[0].patient_state}<br>
-          <strong>Médico(a) responsável:</strong> ${data[0].doctor_name} - ${data[0].doctor_email}<br>
-          <strong>CRM:</strong> ${data[0].doctor_crm}/${data[0].doctor_crm_state}&nbsp;&nbsp;&nbsp;
-          <strong>Data do exame:</strong> ${formatDate(data[0].exam_date)}<br>
-        `;
-        summaryCard.style.display = '';
-
+      if (!tokenView) {
+        examsData = data;
+        currentPage = 1;
+        renderTable(examsData.slice(0, itemsPerPage), tokenView); // = goToPage(1)
+        updatePagination();
       } else {
-        cpfHeader.style.display = '';
-        tokenHeader.style.display = '';
+        renderTable(data, tokenView)
+        document.getElementById('pagination').innerHTML = '';
       }
-
-      data.forEach((exam) => {
-        const row = document.createElement('tr');
-
-        const idCell = document.createElement('td');
-        idCell.textContent = exam.id;
-        row.appendChild(idCell);
-
-        if (!tokenView) {
-          const cpfCell = document.createElement('td');
-          cpfCell.textContent = exam.cpf;
-          row.appendChild(cpfCell);
-        }
-
-        const typeCell = document.createElement('td');
-        typeCell.textContent = exam.exam_type;
-        row.appendChild(typeCell);
-
-        const limitsCell = document.createElement('td');
-        limitsCell.textContent = exam.exam_limits;
-        row.appendChild(limitsCell);
-
-        const resultCell = document.createElement('td');
-        resultCell.textContent = exam.exam_result;
-        row.appendChild(resultCell);
-
-        if (!tokenView) {
-          const tokenCell = document.createElement('td');
-          tokenCell.textContent = exam.exam_token;
-          row.appendChild(tokenCell);
-        }
-
-        tableBody.appendChild(row);
-      });
     })
     .catch((error) => console.log(error));
 }
