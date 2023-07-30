@@ -1,0 +1,27 @@
+cpf;nome paciente;email paciente;data nascimento paciente;endereço paciente;cidade paciente;estado paciente;crm médico;crm médico estado;nome médico;email médico;token resultado exame;data exame;tipo exame;limites tipo exame;resultado tipo exame
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;hemácias;45-52;44
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;leucócitos;9-61;42
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;plaquetas;11-93;77
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;hdl;19-75;44
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;ldl;45-54;58
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;vldl;48-72;57
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;glicemia;25-83;92
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;tgo;50-84;72
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;tgp;38-63;60
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;eletrólitos;2-68;51
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;tsh;25-80;55
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;t4-livre;34-60;57
+672.432.850-15;Isabela Fernandes Souza;isabela.souza@email.com;1990-11-02;456 Rua dos Sonhos;Rio de Janeiro;Rio de Janeiro;D598ER78P;RJ;Fernanda Rodrigues;fernanda.rodrigues@email.com;NHBG56;2023-07-10;ácido úrico;15-61;45
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;hemácias;45-52;45
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;leucócitos;9-61;9
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;plaquetas;11-93;40
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;hdl;19-75;23
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;ldl;45-54;55
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;vldl;48-72;47
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;glicemia;25-83;75
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;tgo;50-84;55
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;tgp;38-63;44
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;eletrólitos;2-68;7
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;tsh;25-80;55
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;t4-livre;34-60;37
+224.717.127-38;Frederico Cardoso;fred.cardoso@email.com;1991-02-20; 635 Batel Boulevard;Curitiba;Paraná;B456DD21F;PR;Rodrigo Góes;rodrigo.goes@email.com;RFC635;2023-02-14;ácido úrico;15-61;35

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 1) do
+ActiveRecord::Schema[7.0].define(version: 2) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -31,6 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 1) do
     t.string "exam_type"
     t.string "exam_limits"
     t.string "exam_result"
+    t.index ["exam_token", "exam_type"], name: "index_exams_on_exam_token_and_exam_type", unique: true
   end
 
 end

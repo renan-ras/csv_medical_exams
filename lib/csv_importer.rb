@@ -25,7 +25,11 @@ class CSVImporter
   def self.import(csv_content)
     CSV.parse(csv_content, headers: true, col_sep: ';') do |row|
       exam_attributes = row.to_h.transform_keys { |key| CSV_TO_MODEL_MAP[key] }
-      Exam.create!(exam_attributes)
+      begin
+        Exam.create!(exam_attributes)
+      rescue ActiveRecord::RecordInvalid => e
+        puts "Falha ao importar a linha: #{row.inspect}. Erro: #{e.message}"
+      end
     end
   end
 end
