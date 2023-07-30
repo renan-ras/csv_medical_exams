@@ -3,4 +3,4 @@ WORKDIR /app
 COPY Gemfile* ./
 RUN bundle install
 COPY . .
-CMD ["bash", "-c", "rake db:migrate && ruby server.rb"]
+CMD [ "ruby", "server.rb" ]

@@ -2,7 +2,8 @@ version: '3.9'
 services:
   web:
     build: .
-    command: bash -c "rake db:migrate && ruby server.rb"
+    container_name: rebase_labs
+    command: bash -c "ruby server.rb"
     environment:
       REDIS_URL: redis://redis:6379/0
     volumes:
@@ -11,15 +12,14 @@ services:
     ports:
       - '3000:3000'
     depends_on:
-      db:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
+      - db
+      - sidekiq
     networks:
       - medical-center
 
   db:
     image: postgres:13
+    container_name: postgres
     environment:
       POSTGRES_USER: my_user
       POSTGRES_PASSWORD: my_password
@@ -28,32 +28,24 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     networks:
       - medical-center
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U my_user -d my_db"]
-      interval: 1s
-      timeout: 10s
-      retries: 3
   
   redis:
     image: redis:7.2-rc3
+    container_name: redis
     networks:
       - medical-center
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 1s
-      timeout: 3s
-      retries: 5
 
   sidekiq:
     build: .
-    command: bash -c "bundle install && bundle exec sidekiq -r ./lib/csv_importer_worker.rb"
+    container_name: sidekiq
+    command: bash -c "bundle exec sidekiq -r ./lib/csv_importer_worker.rb"
     environment:
       REDIS_URL: redis://redis:6379/0
     volumes:
       - .:/app
       - gems-labs:/usr/local/bundle
     depends_on:
-      - web
+      - redis
     networks:
       - medical-center
 
