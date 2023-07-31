@@ -1,0 +1,79 @@
+cpf;nome paciente;email paciente;data nascimento paciente;endereço paciente;cidade paciente;estado paciente;crm médico;crm médico estado;nome médico;email médico;token resultado exame;data exame;tipo exame;limites tipo exame;resultado tipo exame
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;hemácias;45-52;49
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;leucócitos;9-61;38
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;plaquetas;11-93;70
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;hdl;19-75;35
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;ldl;45-54;52
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;vldl;48-72;59
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;glicemia;25-83;72
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;tgo;50-84;56
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;tgp;38-63;45
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;eletrólitos;2-68;55
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;tsh;25-80;75
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;t4-livre;34-60;48
+318.992.110-45;Maria da Silva;maria.silva@email.com;1992-03-10;789 Rua das Palmeiras;Belo Horizonte;Minas Gerais;D77B69KJ;MG;Rafaela Santos;rafaela.santos@email.com;PLJK98;2023-07-31;ácido úrico;15-61;30
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;hemácias;45-52;51
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;leucócitos;9-61;42
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;plaquetas;11-93;69
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;hdl;19-75;39
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;ldl;45-54;50
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;vldl;48-72;61
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;glicemia;25-83;85
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;tgo;50-84;58
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;tgp;38-63;46
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;eletrólitos;2-68;47
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;tsh;25-80;80
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;t4-livre;34-60;51
+535.274.550-85;João Pereira Santos;joao.santos@email.com;1988-09-15;987 Rua dos Sonhos;Curitiba;Paraná;VJ78BB69;PR;Marcelo Alves;marcelo.alves@email.com;PLDQW98;2023-08-05;ácido úrico;15-61;40
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;hemácias;45-52;47
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;leucócitos;9-61;35
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;plaquetas;11-93;71
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;hdl;19-75;40
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;ldl;45-54;50
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;vldl;48-72;57
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;glicemia;25-83;77
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;tgo;50-84;62
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;tgp;38-63;47
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;eletrólitos;2-68;49
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;tsh;25-80;78
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;t4-livre;34-60;49
+911.321.987-56;Pedro Rodrigues;pedro.rodrigues@email.com;1993-12-05;456 Rua das Estrelas;Porto Alegre;Rio Grande do Sul;E7BYH54MK;RS;Carolina Lima;carolina.lima@email.com;XCVB23;2023-08-15;ácido úrico;15-61;33
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;hemácias;45-52;50
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;leucócitos;9-61;40
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;plaquetas;11-93;75
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;hdl;19-75;41
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;ldl;45-54;48
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;vldl;48-72;65
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;glicemia;25-83;80
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;tgo;50-84;60
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;tgp;38-63;50
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;eletrólitos;2-68;55
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;tsh;25-80;75
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;t4-livre;34-60;45
+012.345.678-90;Ana Souza;ana.souza@email.com;1980-05-15;789 Avenida das Flores;Salvador;Bahia;FGHJ78LO;BA;Roberto Oliveira;roberto.oliveira@email.com;TYGH12;2023-09-01;ácido úrico;15-61;28
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;hemácias;45-52;49
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;leucócitos;9-61;38
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;plaquetas;11-93;68
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;hdl;19-75;39
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;ldl;45-54;52
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;vldl;48-72;63
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;glicemia;25-83;82
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;tgo;50-84;54
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;tgp;38-63;50
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;eletrólitos;2-68;55
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;tsh;25-80;78
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;t4-livre;34-60;50
+765.432.109-87;Mariana Oliveira;mariana.oliveira@email.com;1995-11-25;321 Rua das Montanhas;Belo Horizonte;Minas Gerais;L0P9RJ74;MG;Renato Santos;renato.santos@email.com;WQASD45;2023-09-15;ácido úrico;15-61;30
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;hemácias;45-52;51
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;leucócitos;9-61;37
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;plaquetas;11-93;72
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;hdl;19-75;41
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;ldl;45-54;50
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;vldl;48-72;63
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;glicemia;25-83;78
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;tgo;50-84;59
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;tgp;38-63;51
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;eletrólitos;2-68;60
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;tsh;25-80;73
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;t4-livre;34-60;48
+234.567.890-01;Rafael Silva;rafael.silva@email.com;1988-08-10;987 Rua dos Bosques;Curitiba;Paraná;OPKJ23UJ9;PR;Juliana Castro;juliana.castro@email.com;FGH45;2023-09-30;ácido úrico;15-61;31

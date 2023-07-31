@@ -1,3 +1,4 @@
+const API_BASE_URL = 'http://localhost:3000';
 const searchForm = document.getElementById('search-form');
 const searchTokenInput = document.getElementById('search-token');
 const showAllButton = document.getElementById('show-all');
@@ -147,14 +148,12 @@ searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   const token = searchTokenInput.value;
-  const url = `http://localhost:3000/tests/${token}`;
-
+  const url = `${API_BASE_URL}/tests/${token}`;
   fetchExams(url, true);
 });
 
 showAllButton.addEventListener('click', function() {
-  const url = 'http://localhost:3000/tests';
-
+  const url = `${API_BASE_URL}/tests`;
   fetchExams(url, false);
 });
 
@@ -172,9 +171,9 @@ uploadForm.addEventListener('submit', function(event) {
   .then(response => {
     // handle response
     if (response.ok) {
-      console.log('Upload successful');
+      console.log('Upload enfilerado com sucesso');
     } else {
-      console.log('Upload failed');
+      console.log('Upload falhou');
     }
   })
   .catch(error => console.error('Error:', error));

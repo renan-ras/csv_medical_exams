@@ -1,0 +1,57 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    container_name: tests
+    command: bash -c "ruby server.rb"
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - .:/app
+      - gems-labs-test:/usr/local/bundle
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+      - sidekiq
+    networks:
+      - medical-center-test
+
+  db:
+    image: postgres:13
+    container_name: postgres-tests
+    environment:
+      POSTGRES_USER: my_user
+      POSTGRES_PASSWORD: my_password
+      POSTGRES_DB: my_db
+    volumes:
+      - postgres_data-test:/var/lib/postgresql/data/
+    networks:
+      - medical-center-test
+  
+  redis:
+    image: redis:7.2-rc3
+    container_name: redis-tests
+    networks:
+      - medical-center-test
+
+  sidekiq:
+    build: .
+    container_name: sidekiq-tests
+    command: bash -c "bundle exec sidekiq -r ./lib/csv_importer_worker.rb"
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - .:/app
+      - gems-labs-test:/usr/local/bundle
+    depends_on:
+      - redis
+    networks:
+      - medical-center-test
+
+networks:
+  medical-center-test:
+
+volumes:
+  postgres_data-test:
+  gems-labs-test:
